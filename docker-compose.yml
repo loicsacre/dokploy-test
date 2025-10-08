@@ -4,6 +4,6 @@ services:
   web:
     build: .
     container_name: dockploy_test_app
-    ports:
-      - "3001:3001"
+    expose:
+      - "3001"
     restart: unless-stopped
